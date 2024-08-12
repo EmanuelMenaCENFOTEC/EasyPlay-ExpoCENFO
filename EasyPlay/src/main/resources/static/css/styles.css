@@ -8,7 +8,7 @@ body {
     flex-direction: row;
     justify-content: center;
     width: 80%;
-    margin: 8% auto;
+    margin: 5% auto;
 }
 
 .master-container,
@@ -88,4 +88,31 @@ body {
     border-radius: 5px;
     border: none;
     padding: 2%;
+}
+
+.action-button {
+    display: flex;
+    justify-content: center;
+}
+
+.action-button button {
+    border: none;
+    border-radius: 10px;
+    background-color: #2C2C2C;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    padding: 2%;
+}
+
+.action-button button:hover {
+    background-color: #333333;
+    transform: translateY(-2px); /* Levanta un poco el botón */
+}
+
+.action-button button:active {
+    transform: translateY(0); /* Devuelve la posición del botón al hacer clic */
 }

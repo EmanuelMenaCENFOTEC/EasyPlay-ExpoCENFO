@@ -11,64 +11,176 @@
 
 <div class="container">
 
-    <div class="io-box-container">
+    <div class="master-container">
 
-        <div class="master-section">
-            <h3>Master (RFID)</h3>
+        <div class="io-box-container">
+
+            <div class="master-section">
+                <h3>Master
+                    <br>
+                    (RFID)</h3>
+            </div>
+
+            <div class="io-box display-flex">
+                <h4>Comportamiento del Joystick</h4>
+                <span class="span1">
+                    <label><input type="radio" name="behavior" value="keyboard"> Teclado </label>
+                    <label><input type="radio" name="behavior" value="mouse"> Mouse </label>
+                </span>
+                <label class="io-box-select">
+                    <p>Dirección de Arriba</p>
+                    <select>
+                        <option value="north">Norte</option>
+                        <option value="south">Sur</option>
+                        <option value="east">Este</option>
+                        <option value="west">Oeste</option>
+                    </select>
+                </label>
+
+            </div>
+
         </div>
 
-        <div class="io-box">
-            <h4>Joystick Behavior</h4>
-            <label><input type="radio" name="behavior" value="keyboard"> Keyboard</label>
-            <label><input type="radio" name="behavior" value="mouse"> Mouse</label>
-            <select>
-                <option value="north">North</option>
-                <option value="south">South</option>
-                <option value="east">East</option>
-                <option value="west">West</option>
-            </select>
+        <div class="io-box-container">
+
+            <div class="io-box display-flex">
+                <h4>IO34</h4>
+                <span class="span">
+                    <label><input type="radio" name="behavior" value="keyboard"> Teclado </label>
+                    <label><input type="radio" name="behavior" value="mouse"> Mouse </label>
+                </span>
+                <label><input type="checkbox" name="pressed"> Mantener Presionado</label>
+                <p>Acción</p>
+                <input class="input-box" type="text" name="action" value="click left">
+            </div>
+
+            <div class="io-box display-flex">
+                <h4>IO36</h4>
+                <span class="span">
+                    <label><input type="radio" name="behavior" value="keyboard"> Teclado </label>
+                    <label><input type="radio" name="behavior" value="mouse"> Mouse </label>
+                </span>
+                <label><input type="checkbox" name="pressed"> Mantener Presionado</label>
+                <p>Acción</p>
+                <input class="input-box" type="text" name="action" value="click left">
+            </div>
+
+        </div>
+
+        <div class="io-box-container">
+
+            <div class="io-box display-flex">
+                <h4>IO35</h4>
+                <span class="span">
+                    <label><input type="radio" name="behavior" value="keyboard"> Teclado </label>
+                    <label><input type="radio" name="behavior" value="mouse"> Mouse </label>
+                </span>
+                <label><input type="checkbox" name="pressed"> Mantener Presionado</label>
+                <p>Acción</p>
+                <input class="input-box" type="text" name="action" value="click left">
+            </div>
+
+            <div class="io-box display-flex">
+                <h4>IO39</h4>
+                <span class="span">
+                    <label><input type="radio" name="behavior" value="keyboard"> Teclado </label>
+                    <label><input type="radio" name="behavior" value="mouse"> Mouse </label>
+                </span>
+                <label><input type="checkbox" name="pressed"> Mantener Presionado</label>
+                <p>Acción</p>
+                <input class="input-box" type="text" name="action" value="click left">
+            </div>
+
         </div>
 
     </div>
 
-    <div class="io-box-container">
+    <div class="slave-container">
 
-        <div class="io-box">
-            <h4>IO34</h4>
-            <label><input type="radio" name="inputType" value="keyboard"> Keyboard</label>
-            <label><input type="radio" name="inputType" value="mouse"> Mouse</label>
-            <label><input type="checkbox" name="pressed"> Keep Pressed</label>
-            <input type="text" name="action" value="click left">
-        </div>
+        <div class="io-box-container">
 
-        <div class="io-box">
-            <h4>IO36</h4>
-            <label><input type="radio" name="inputType" value="keyboard"> Keyboard</label>
-            <label><input type="radio" name="inputType" value="mouse"> Mouse</label>
-            <label><input type="checkbox" name="pressed"> Keep Pressed</label>
-            <input type="text" name="action" value="click left">
-        </div>
+                <div class="slave-section">
+                    <h3>Slave
+                        <br>
+                        Device</h3>
+                </div>
+
+                <div class="io-box display-flex">
+                    <h4>Comportamiento del Joystick</h4>
+                    <span class="span1">
+                        <label><input type="radio" name="behavior" value="keyboard"> Teclado </label>
+                        <label><input type="radio" name="behavior" value="mouse"> Mouse </label>
+                    </span>
+                    <label class="io-box-select">
+                        <p>Dirección de Arriba</p>
+                        <select>
+                            <option value="north">Norte</option>
+                            <option value="south">Sur</option>
+                            <option value="east">Este</option>
+                            <option value="west">Oeste</option>
+                        </select>
+                    </label>
+
+                </div>
+
+            </div>
+
+        <div class="io-box-container">
+
+                <div class="io-box display-flex">
+                    <h4>IO34</h4>
+                    <span class="span">
+                        <label><input type="radio" name="behavior" value="keyboard"> Teclado </label>
+                        <label><input type="radio" name="behavior" value="mouse"> Mouse </label>
+                    </span>
+                    <label><input type="checkbox" name="pressed"> Mantener Presionado</label>
+                    <p>Acción</p>
+                    <input class="input-box" type="text" name="action" value="click left">
+                </div>
+
+                <div class="io-box display-flex">
+                    <h4>IO36</h4>
+                    <span class="span">
+                        <label><input type="radio" name="behavior" value="keyboard"> Teclado </label>
+                        <label><input type="radio" name="behavior" value="mouse"> Mouse </label>
+                    </span>
+                    <label><input type="checkbox" name="pressed"> Mantener Presionado</label>
+                    <p>Acción</p>
+                    <input class="input-box" type="text" name="action" value="click left">
+                </div>
+
+            </div>
+
+        <div class="io-box-container">
+
+                <div class="io-box display-flex">
+                    <h4>IO35</h4>
+                    <span class="span">
+                        <label><input type="radio" name="behavior" value="keyboard"> Teclado </label>
+                        <label><input type="radio" name="behavior" value="mouse"> Mouse </label>
+                    </span>
+                    <label><input type="checkbox" name="pressed"> Mantener Presionado</label>
+                    <p>Acción</p>
+                    <input class="input-box" type="text" name="action" value="click left">
+                </div>
+
+                <div class="io-box display-flex">
+                    <h4>IO39</h4>
+                    <span class="span">
+                        <label><input type="radio" name="behavior" value="keyboard"> Teclado </label>
+                        <label><input type="radio" name="behavior" value="mouse"> Mouse </label>
+                    </span>
+                    <label><input type="checkbox" name="pressed"> Mantener Presionado</label>
+                    <p>Acción</p>
+                    <input class="input-box" type="text" name="action" value="click left">
+                </div>
+
+            </div>
 
     </div>
 
-    <div class="io-box-container">
-
-        <div class="io-box">
-            <h4>IO35</h4>
-            <label><input type="radio" name="inputType" value="keyboard"> Keyboard</label>
-            <label><input type="radio" name="inputType" value="mouse"> Mouse</label>
-            <label><input type="checkbox" name="pressed"> Keep Pressed</label>
-            <input type="text" name="action" value="click left">
-        </div>
-
-        <div class="io-box">
-            <h4>IO39</h4>
-            <label><input type="radio" name="inputType" value="keyboard"> Keyboard</label>
-            <label><input type="radio" name="inputType" value="mouse"> Mouse</label>
-            <label><input type="checkbox" name="pressed"> Keep Pressed</label>
-            <input type="text" name="action" value="click left">
-        </div>
-
+    <div class="action-button">
+        
     </div>
 
 </div>

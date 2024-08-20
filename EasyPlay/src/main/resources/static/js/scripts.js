@@ -1,5 +1,4 @@
 function capturarDatos() {
-    // captura los valores de los inputs
     const inputsAccion = document.getElementsByClassName('input-box');
     let hexString = '';
 
@@ -16,11 +15,7 @@ function capturarDatos() {
         hexString = hexString.slice(0, -3);
     }
 
-    console.log(hexString);
-
-    blehKeyboard.print(hexString);
-    // o
-    blehMouse.print(hexString);
+    console.log("String Completo:", hexString);
 }
 
 document.addEventListener('DOMContentLoaded', function() {

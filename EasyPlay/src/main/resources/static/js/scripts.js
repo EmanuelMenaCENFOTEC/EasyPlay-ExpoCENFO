@@ -1,12 +1,26 @@
-console.log("hola");
-
 function capturarDatos() {
-    // capturar los valores de los inputs
+    // captura los valores de los inputs
     const inputsAccion = document.getElementsByClassName('input-box');
-    // recorrer los inputs e imprimirlos
+    let hexString = '';
+
     for (const input of inputsAccion) {
-        console.log(input.value);
+        let texto = input.value;
+
+        for (let i = 0; i < texto.length; i++) {
+            let hexValue = texto.charCodeAt(i).toString(16).toUpperCase();
+            hexString += hexValue + 'x9D';
+        }
     }
+
+    if (hexString.endsWith('x9D')) {
+        hexString = hexString.slice(0, -3);
+    }
+
+    console.log(hexString);
+
+    blehKeyboard.print(hexString);
+    // o
+    blehMouse.print(hexString);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
